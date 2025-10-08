@@ -1,0 +1,47 @@
+{
+  // Visite https://aka.ms/tsconfig para ler mais sobre este arquivo
+  "compilerOptions": {
+    // --- Configurações de Compilação ---
+    // A flag essencial para permitir que 'import express from "express"' funcione.
+    // Ela cria compatibilidade com módulos CommonJS (como o Express).
+    "esModuleInterop": true, 
+
+    // O Node.js usa o algorítmo "Node" para resolver módulos.
+    // 'nodenext' é moderno e funciona bem com o 'esnext' e 'moduleResolution: node'.
+    "module": "nodenext", 
+    "target": "esnext",
+
+    // Necessário para o TypeScript encontrar os tipos globais do Node.js
+    "types": ["node"], 
+    
+    // Configurações de Layout
+    // "rootDir": "./src",
+    // "outDir": "./dist",
+
+    // Outras Saídas
+    "sourceMap": true,
+    "declaration": true,
+    "declarationMap": true,
+
+    // --- Configurações de Estrito/Stricter Typechecking Options ---
+    // Omiti a 'verbatimModuleSyntax' para corrigir o problema de importação.
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+    
+    // Stricter/Style Options (Recomendado manter ativado)
+    // "noImplicitReturns": true,
+    // "noImplicitOverride": true,
+    // "noUnusedLocals": true,
+    // "noUnusedParameters": true,
+    // "noFallthroughCasesInSwitch": true,
+    // "noPropertyAccessFromIndexSignature": true,
+
+    // --- Opções Recomendadas ---
+    "strict": true,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+    "jsx": "react-jsx" // Mantido como estava no seu arquivo
+  }
+}
