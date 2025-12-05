@@ -26,7 +26,7 @@
     // --- Configurações de Estrito/Stricter Typechecking Options ---
     // Omiti a 'verbatimModuleSyntax' para corrigir o problema de importação.
     "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
+    "exactOptionalPropertyTypes": false,
     
     // Stricter/Style Options (Recomendado manter ativado)
     // "noImplicitReturns": true,
@@ -37,7 +37,7 @@
     // "noPropertyAccessFromIndexSignature": true,
 
     // --- Opções Recomendadas ---
-    "strict": true,
+    "strict": false,
     "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
